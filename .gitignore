@@ -1,0 +1,17 @@
+# Logs
+logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.bower-cache
+*.bower-registry
+*.bower-tmp
+
+node_modules
+app/components
+test_file.json
+saved_rates.json
+locale_data.json
