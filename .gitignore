@@ -10,6 +10,7 @@ pids
 *.bower-registry
 *.bower-tmp
 
+.notes
 node_modules
 app/components
 test_file.json
