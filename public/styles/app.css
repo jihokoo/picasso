@@ -1,8 +1,30 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+	background-color: #f7f7f7;
+ 	padding: 50px;
+ 	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
-  color: #00B7FF;
+	color: #00B7FF;
+}
+
+#siteName {
+	font-family: 'proxima-nova-n7','proxima-nova',sans-serif;
+	font-weight: 700;
+	text-align: center;
+	font-size: 60px;
+	margin-top: 8%;
+}
+
+.searchBar {
+	display:block;
+	font-size: 20px;
+	text-indent: 10px;
+	margin: 5% auto 0% auto;
+	width:80%;
+	max-width: 40%;
+	background-color: transparent;
+	border: 0;
+	border-radius: 0;
+	border-bottom: 1px solid #aaaaaa;
 }
