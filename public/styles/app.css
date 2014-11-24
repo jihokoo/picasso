@@ -8,21 +8,34 @@ body {
 
 a {
 	color: #00B7FF;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none !important;
+	font-weight: 1000;
 }
 
 #topBar {
 	height: 50px;
-	background-color: black;
+	background-color: #aaaaaa;
 }
 
 #logo {
 	font-family: 'proxima-nova-n7','proxima-nova',sans-serif;
+	width: 150px;
+	text-indent: 30px;
 	padding-top: 6px;
 	font-size: 30px;
 	color: white;
 	margin-top: 0;
-	margin-left: 10px;
 	letter-spacing: 2px;
+}
+
+#logo:hover {
+	text-decoration: none !important;
+	font-weight: 1000;
+	color: black;
 }
 
 #siteName {
@@ -37,17 +50,42 @@ a {
 .searchBar {
 	font-family: 'proxima-nova-n7','proxima-nova',sans-serif;
 	display: block;
-	font-size: 30px;
+	float: left;
+	font-size: 200%;
 	text-indent: 10px;
-	margin: 5% auto 0% auto;
-	width: 80%;
-	max-width: 40%;
+	margin: 20px auto 0% auto;
+	width: 400px;
 	background-color: transparent;
 	border: 0;
 	border-radius: 0;
 	border-bottom: 1px solid #aaaaaa;
 }
 
+.center {
+	display: block;
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .searchBar:focus{
 	outline: none;
 }
+
+/*.searchButton {
+	font-family: 'Symbola' !important;
+	display: block;
+	float: left;
+	width: 80px;
+	margin: 32px auto 0% 20px;
+}
+
+button {
+	font-family: 'Symbola' !important;
+	background-color: white;
+	font-size: 20px !important;
+	text-align: center;
+	border: 0px solid #aaaaaa;
+	border-radius: 5px;
+	color: #aaaaaa !important;
+}*/

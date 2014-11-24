@@ -1,7 +1,12 @@
 <section ng-controller="IndexController">
 	<div id="topBar">
-		<h1 id="logo">{{siteName}}</h1>
+		<a href="index.html"><h1 id="logo">{{siteName}}</h1></a>
 	</div>
 	<h1 id="siteName">{{siteName}}</h1>
-	<input class="searchBar" placeholder=" find artists, art, curators..." spellcheck="false" type="search" autofocus>
+	<div class="center">
+		<input class="searchBar" placeholder=" find artists, art, curators..." spellcheck="false" type="search" autofocus>
+		<!--<div class="searchButton">
+			<button> &#128270; </button>
+		</div>-->
+	</div>
 </section>
