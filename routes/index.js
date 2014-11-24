@@ -4,7 +4,7 @@ var index = require('../app/controllers/index');
 
 /* GET home page. */
 router.get('/', function(req, res) {
-  res.render('index', { title: 'Express' });
+  res.render('index', { header: 'Express' });
 });
 
 module.exports = router;

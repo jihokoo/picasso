@@ -1,0 +1,29 @@
+{
+  "name": "picasso",
+  "version": "0.0.1",
+  "dependencies": {
+    "jquery": "2.1.1",
+    "angular": "1.2.22",
+    "angular-resource": "1.2.22",
+    "angular-cookies": "*",
+    "angular-bootstrap": "0.11.0",
+    "angular-ui-utils": "0.1.1",
+    "angular-ui-ace": "0.1.1",
+    "angular-ui-router": "0.2.10",
+    "angular-route": "1.2.22"
+  },
+  "exportsOverride": {
+    "bootstrap": {
+      "css": "docs/assets/css/bootstrap*.css",
+      "js": "docs/assets/js/bootstrap.js",
+      "img": "docs/assets/img/glyphicons-halflings*.png"
+    },
+    "angular-ui-utils": {
+      "modules": "modules/route/route.js"
+    }
+  },
+  "resolutions": {
+    "angular": "1.2.22"
+  }
+}
+

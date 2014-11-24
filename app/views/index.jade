@@ -1,5 +1,6 @@
-extends layout
+extends layouts/default
 
 block content
-  h1= title
-  p Welcome to #{title}
+  section(data-ui-view)
+  script(type='text/javascript').
+    window.header = !{JSON.stringify(header)};
