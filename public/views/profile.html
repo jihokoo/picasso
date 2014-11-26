@@ -1,1 +1,71 @@
-<h1>This is the profile</h1>
+<section ng-controller="IndexController">
+	<head>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js">
+</script>
+	</head>
+
+	<div id="topBar">
+		<a href="index.html"><h1 id="logo">{{siteName}}</h1></a>
+		<div class="menuButtons">
+			<p>settings</p>
+			<p>customize</p>
+			<p>share</p>
+		</div>
+		<ul class="tabs"> 
+      <li class="active" rel="tab1">followers</li>
+      <li rel="tab2">artwork</li>
+      <li rel="tab3">showings</li>
+      <li rel="tab4">profile</li>
+  	</ul>
+	</div>
+
+	<div id="leftSection">
+		<div id="profPic">
+			<img src="images/profPic.jpg">
+		</div>
+		<div id="leftButtons">
+			<button>follow</button>
+			<button>message</button>
+			<button>share</button>
+		</div>
+	</div>
+
+	<div id="rightSection">
+		
+
+  	<div class="tab_container"> 
+    	<div id="tab1" class="tab_content"> 
+        <strong>tab 1</strong>
+        </p>
+			</div><!-- #tab1 -->
+     	<div id="tab2" class="tab_content"> 
+      	<strong>tab 2</strong>
+       	</p>
+     	</div><!-- #tab2 -->
+     	<div id="tab3" class="tab_content"> 
+      	<strong>tab 3</strong>
+       	</p>
+     	</div><!-- #tab3 -->
+     	<div id="tab4" class="tab_content"> 
+      	<strong>tab 4</strong>
+       	</p>
+     	</div><!-- #tab4 -->    
+ 		</div> <!-- .tab_container -->
+ 		<script type="text/javascript"> 
+ 			$(document).ready(function() {
+				$(".tab_content").hide();
+				$(".tab_content:first").show(); 
+				$("ul.tabs li").click(function() {
+				$("ul.tabs li").removeClass("active");
+				$(this).addClass("active");
+				$(".tab_content").hide();
+				var activeTab = $(this).attr("rel"); 
+				$("#"+activeTab).fadeIn(0); 
+				});
+			});
+		</script>
+ 	</div>
+
+
+
+</section>

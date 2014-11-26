@@ -1,9 +1,10 @@
 body {
-	background-color: #f1f1f1 !important;
+	background-color: white !important;
  	padding: 50px;
  	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
  	margin: 0;
  	padding: 0;
+ 	font-family: 'proxima-nova-n7','proxima-nova',sans-serif;
 }
 
 a {
@@ -16,45 +17,58 @@ a:hover {
 	font-weight: 1000;
 }
 
+button:focus {
+	outline: 0;
+}
+
 #topBar {
 	z-index: 3;
 	position: fixed;
 	top: 0;
 	width: 100%;
 	height: auto;
-	background-color: rgba(255,255,255,0.9);
-	border-bottom: 0px solid black;
+	background-color: rgba(255,255,255,0.0);
 }
 
 .menuButtons {
 	float: right;
-	margin-right: 10%;
-	width: 500px;
+	width: 100%;
+	background-color: white;
 	margin-top: 0;
 	padding-top: 6px;
+	padding-bottom: 6px;
+	border-bottom: 1px solid black;
 	text-align: center !important;
+	cursor: pointer;
 }
 
 .menuButtons p {
 	font-family: 'proxima-nova-n7','proxima-nova',sans-serif;
-	font-size: 14px;
+	font-size: 12px;
 	letter-spacing: 2px;
 	color: black;
 	float: right;
-	margin-top: 0;
-	padding-top: 14px;
-	padding-left: 60px;
+	margin-top: 8px;
+	padding-right: 30px;
+	padding: 5px;
+	margin-bottom: 0px;
+	text-align: center !important;
+	border-radius: 10px;
+	width: 100px;
+	-webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  transition-duration: 0.2s;
 }
 
 .menuButtons p:hover{
-	color: #aaaaaa;
+	color: #808080;
+	text-decoration: underline;
 }
 
 #logo {
-	position: block;
-	float: left;
+	position: fixed;
 	font-family: 'proxima-nova-n7','proxima-nova',sans-serif;
-	width: 150px;
+	width: auto;
 	text-indent: 30px;
 	padding-top: 6px;
 	font-size: 30px;
@@ -74,7 +88,7 @@ a:hover {
 	font-weight: 700;
 	text-align: center;
 	font-size: 80px;
-	margin-top: 140px;
+	margin-top: 180px;
 	letter-spacing: 5px;
 	z-index: 1;
 }
@@ -146,9 +160,10 @@ button {
 	width: 450px;
 	height: 300px;
 	margin: auto auto auto auto;
-	background-color: rgba(255,255,255,0.9);
+	background-color: rgba(255,255,255,0.0);
 	margin-top: 75px;
 	border-radius: 5px;
+	box-shadow: 0px 1px 40px 0px rgba(0, 0, 0, 0.0);
 }
 
 #homeImage {
@@ -156,3 +171,117 @@ button {
 	height:100%;
 	opacity: 0.2;
 }
+
+/*------------ PROFILE PAGE ---------------------------------------------*/
+
+#profPic {
+	display: block;
+	float: left;
+	width: 100%;
+	margin-top: 70px;
+	margin-bottom: 30px;
+}
+
+#profPic img {
+	display: block;
+	margin: auto auto auto auto;
+	width: 80%;
+	padding: 0px;
+	border-radius: 150px;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+ul {
+	margin-bottom: 0px !important;
+}
+ul.tabs {
+		position: block;
+		float: right;
+		background-color: #d3d3d3;
+		padding: 0;
+		list-style: none;
+		height: auto;
+		border: none;
+		width: 88%;
+		text-align: center;
+	}
+	ul.tabs li {
+		float: right;
+		width: 25%;
+		cursor: pointer;
+		padding: 0px 21px;
+		height: 105%;
+		text-align: middle;
+		letter-spacing: 1px;
+		line-height: 31px;
+		border-top: 1px solid rgba(0, 0, 0, 0.2);
+		border-bottom: 1px solid black;
+    -webkit-transition-duration: 0.1s;
+    -moz-transition-duration: 0.1s;
+    transition-duration: 0.1s;
+	}
+	ul.tabs li:hover {
+		background-color: white;
+		border-left: 1px solid black;
+		border-right: 1px solid black;
+	}	
+	ul.tabs li.active{
+		background-color: white;
+		border-right: 1px solid black;
+		border-left: 1px solid black;
+		border-bottom: 1px solid white;
+		color: black;
+	}
+	.tab_container {
+		position: block;
+		width: 100%;
+		height: 100px;
+	}
+	.tab_content {
+		position: block;
+		float: left;
+		width: 100%;
+		padding: 10px;
+		font-size: 1.2em;
+		height: 500px;
+	}
+	#rightSection {
+		width: 88%;
+		min-width: 300px;
+		display: block;
+		float: left;
+		margin-top: 78px;
+		height: auto;
+	}
+	#leftSection {
+		display: block;
+		float: left;
+		width: 12%;
+		border-right: 1px solid black;
+		height: 100vh;
+		background-color: #d3d3d3;
+	}
+	#leftButtons {
+		display: block;
+		float: left;
+		width: 100%;
+	}
+	#leftButtons button {
+		font-size: 100%;
+		letter-spacing: 0.5px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 10px;
+		width: 100%;
+		height: 35px;
+		border: none;
+		background-color: #e7e7e7;
+		-webkit-transition-duration: 0.1s;
+    -moz-transition-duration: 0.1s;
+    transition-duration: 0.1s;
+	}
+	#leftButtons button:hover {
+		background-color: black;
+		color: white;
+	}
