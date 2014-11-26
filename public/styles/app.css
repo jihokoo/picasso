@@ -188,7 +188,7 @@ button {
 	width: 80%;
 	padding: 0px;
 	border-radius: 150px;
-	border: 1px solid rgba(0, 0, 0, 0.2);
+	box-shadow: 1px 1px 1px 1px grey;
 }
 
 ul {
@@ -197,7 +197,7 @@ ul {
 ul.tabs {
 		position: block;
 		float: right;
-		background-color: #d3d3d3;
+		background-color: rgba(211,211,211,0.7);
 		padding: 0;
 		list-style: none;
 		height: auto;
@@ -217,14 +217,18 @@ ul.tabs {
     -webkit-transition-duration: 0.1s;
     -moz-transition-duration: 0.1s;
     transition-duration: 0.1s;
+    box-shadow: inset 0 -10px 10px -8px grey;
+    -moz-box-shadow: inset 0 -10px 10px -8px grey;
+    -webkit-box-shadow: inset 0 -10px 10px -8px grey;
 	}
 	ul.tabs li:hover {
 		background-color: black;
 		color: white;
 	}	
 	ul.tabs li.active{
-		background-color: white;
+		background-color: rgba(255,255,255,0.7);
 		color: black;
+		box-shadow: 1px 1px 1px 1px grey;
 	}
 	.tab_container {
 		position: block;
@@ -257,11 +261,12 @@ ul.tabs {
 		border-right: none;
 		height: 100vh;
 		background-color: #d3d3d3;
+		box-shadow: inset 1px 1px 10px 1px grey;
 	}
 	#leftButtons {
 		display: block;
-		float: left;
-		width: 100%;
+		margin: auto auto auto auto;
+		width: 80%;
 	}
 	#leftButtons button {
 		font-size: 100%;
@@ -274,6 +279,7 @@ ul.tabs {
 		height: 35px;
 		border: none;
 		background-color: #e7e7e7;
+		box-shadow: 1px 1px 1px 1px grey;
 		-webkit-transition-duration: 0.1s;
     -moz-transition-duration: 0.1s;
     transition-duration: 0.1s;
