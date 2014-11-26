@@ -1,5 +1,5 @@
 body {
-	background-color: #f7f7f7;
+	background-color: #f1f1f1 !important;
  	padding: 50px;
  	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
  	margin: 0;
@@ -17,17 +17,48 @@ a:hover {
 }
 
 #topBar {
-	height: 50px;
-	background-color: #aaaaaa;
+	z-index: 3;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: auto;
+	background-color: rgba(255,255,255,0.9);
+	border-bottom: 0px solid black;
+}
+
+.menuButtons {
+	float: right;
+	margin-right: 10%;
+	width: 500px;
+	margin-top: 0;
+	padding-top: 6px;
+	text-align: center !important;
+}
+
+.menuButtons p {
+	font-family: 'proxima-nova-n7','proxima-nova',sans-serif;
+	font-size: 14px;
+	letter-spacing: 2px;
+	color: black;
+	float: right;
+	margin-top: 0;
+	padding-top: 14px;
+	padding-left: 60px;
+}
+
+.menuButtons p:hover{
+	color: #aaaaaa;
 }
 
 #logo {
+	position: block;
+	float: left;
 	font-family: 'proxima-nova-n7','proxima-nova',sans-serif;
 	width: 150px;
 	text-indent: 30px;
 	padding-top: 6px;
 	font-size: 30px;
-	color: white;
+	color: black;
 	margin-top: 0;
 	letter-spacing: 2px;
 }
@@ -43,22 +74,24 @@ a:hover {
 	font-weight: 700;
 	text-align: center;
 	font-size: 80px;
-	margin-top: 8%;
+	margin-top: 140px;
 	letter-spacing: 5px;
+	z-index: 1;
 }
 
 .searchBar {
 	font-family: 'proxima-nova-n7','proxima-nova',sans-serif;
+	color: black;
 	display: block;
 	float: left;
 	font-size: 200%;
 	text-indent: 10px;
-	margin: 20px auto 0% auto;
+	margin: 250px auto 0% auto;
 	width: 400px;
 	background-color: transparent;
 	border: 0;
 	border-radius: 0;
-	border-bottom: 1px solid #aaaaaa;
+	border-bottom: 1px solid black;
 }
 
 .center {
@@ -66,6 +99,7 @@ a:hover {
 	width: 400px;
 	margin-left: auto;
 	margin-right: auto;
+	margin-top: -200px;
 }
 
 .searchBar:focus{
@@ -89,3 +123,36 @@ button {
 	border-radius: 5px;
 	color: #aaaaaa !important;
 }*/
+
+.tableRow {
+	margin-top: -300px;
+	position: static;
+	width: 100%;
+	z-index: -1;
+}
+
+.tableCells {
+	position: relative;
+	width: 600px !important;
+	height: 210px;
+	max-height: 420px;
+	border: none;
+	text-align: center;
+	background-color: white;
+	z-index: -1;
+}
+
+#transparencyBox {
+	width: 450px;
+	height: 300px;
+	margin: auto auto auto auto;
+	background-color: rgba(255,255,255,0.9);
+	margin-top: 75px;
+	border-radius: 5px;
+}
+
+#homeImage {
+	width: 100%;
+	height:100%;
+	opacity: 0.2;
+}
