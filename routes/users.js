@@ -1,12 +1,11 @@
-var express = require('express');
+var express = require("express");
 var router = express.Router();
-var user = require('../app/controllers/users');
+var user = require("../app/controllers/users");
 
-/* GET users listing. */
-router.get('/', user.getAll);
-router.get('/:userId', user.getOne);
-router.get('/', user.create);
-router.get('/:userId', user.update);
-router.get('/:userId', user.remove);
+router.get("/", user.getAll);
+router.get("/:userId", user.getOne);
+router.post("/", user.create);
+router.put("/:userId", user.update);
+router.delete("/:userId", user.remove);
 
 module.exports = router;

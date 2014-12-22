@@ -9,6 +9,10 @@ window.app.config(['$stateProvider', '$urlRouterProvider',
           url:'/',
           templateUrl: 'views/index.html'
         })
+        .state('signup', {
+          url:'/signup',
+          templateUrl: 'views/signup.html'
+        })
         .state('profile', {
           url:'/:userName',
           templateUrl: 'views/profile.html'
